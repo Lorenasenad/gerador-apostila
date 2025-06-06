@@ -8,7 +8,7 @@ async function enviarLink() {
   downloadSection.style.display = "none";
 
   try {
-    const response = await fetch("https://SEU_WEBHOOK.n8n.cloud/seu-endpoint", {
+    const response = await fetch("https://n8n.faculdademaratlantico.com.br/webhook-test/upload-transcricao", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ driveLink })
@@ -28,3 +28,4 @@ async function enviarLink() {
     console.error(error);
   }
 }
+atualiza script com webhook da FMA
