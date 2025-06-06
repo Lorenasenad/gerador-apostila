@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador de Apostilas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Gerador de Apostilas</h1>
+  <p>Insira o link do Google Drive contendo a transcrição da aula:</p>
+  <input type="text" id="driveLink" placeholder="Cole o link aqui" />
+  <button onclick="enviarLink()">Enviar</button>
+  <p id="status"></p>
+  <div id="downloadSection" style="display:none;">
+    <a id="downloadLink" href="#" download>Baixar Apostila</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
