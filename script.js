@@ -8,7 +8,7 @@ async function enviarLink() {
   downloadSection.style.display = "none";
 
   try {
-    const response = await fetch("https://n8n.faculdademaratlantico.com.br/webhook-test/upload-transcricao", {
+    const response = await fetch("https://n8n.faculdademaratlantico.com.br/webhook/upload-transcricao", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ driveLink })
